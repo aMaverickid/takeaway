@@ -1,0 +1,14 @@
+<!--components/dishes/dishes.wxml-->
+<view class="list_item">
+  <image class="photo" src="{{item.photo}}"></image>
+  <view class="container">
+    <view style="margin-top: 2rpx;float:left;font-size: 40rpx;">{{item.name}}</view>
+    <view class="wrapper">
+      <view class="button">添加</view>
+    </view>
+    <view class="wrap">
+      <view style="padding-bottom: 25px;"></view>
+      <view class="type">价格：{{item.price}}</view>
+    </view>
+  </view>
+</view>

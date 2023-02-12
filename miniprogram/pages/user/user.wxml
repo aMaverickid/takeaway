@@ -1,0 +1,56 @@
+<view class="wrapper">
+<view >
+<image class="cover-box" mode="scaleToFill" src="../../images/2.jpg"></image>
+  <block wx:if="{{!hasUserInfo}}">
+      <image class="image2" src="../../images/3.png"></image>
+      <text class="b" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">点此登陆 </text>
+      <button class="a" wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登陆 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+  <block wx:else>
+    <image class="image2" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="a">{{userInfo.nickName}}</text>
+  </block>
+  
+    <view class="yong">
+  <text>用户信誉：{{xinyu}}</text>
+  
+    </view>
+    <view class="yong">
+    <text>帮带过的单数：{{}}</text><text>下过的单数：{{}}</text>
+    </view>
+</view>
+<view class="page_row" bingtap="suo">
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size="20" type="search"></icon>
+      <input class="sousuobox" placeholder="搜索历史订单" bindinput="inputCom"/>
+    </view>
+  </view>
+  <view class="sousuo" bindtap="query">搜索</view>
+</view>
+ <view class="buttonset">
+  <view class="button" bindtap="comTime" data-property="time">按时间排序</view>
+  <!--下拉菜单栏-->
+  <view class="button" bindtap="bindShowMsg">
+    <text>{{grade_name}}</text>
+  </view>
+  <view class="select_box" wx:if="{{select}}">
+    <view wx:for="{{grades}}" wx:key="unique">
+     <view class="select_one" bindtap="mySelect" data-name="{{item}}">{{item}}</view>
+    </view>
+  </view>
+
+
+  <view class="button" bindtap="comMoney">按金额排序</view>
+ </view>
+ <view class="place">
+ <view class="detail">点击订单可查看详情</view>
+ <view style="padding-bottom:3px"></view>
+  <view class="com" wx:for="{{ceshi}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+   <dingdan item="{{item}}"/>
+</view>
+  </view>
+
+ 
+</view>

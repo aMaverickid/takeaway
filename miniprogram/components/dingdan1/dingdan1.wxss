@@ -1,0 +1,48 @@
+/* components/dingdan1/dingdan1.wxss */
+.picture{
+  
+  height:180rpx;
+  width:150rpx;
+  border-radius:15rpx;
+  float:left;
+ margin-left:15rpx;
+ margin-top:25rpx;
+ margin-right:5px;
+ 
+}
+.list-item{
+border:1px solid #d0d0d0;
+border-radius:5px;
+width:95%;
+margin-left:5px;
+height:235rpx;
+background-color: rgb(255, 255, 255);
+margin-bottom:6px;
+}
+.type{
+font-size:10px;
+color:#b1b1b1;
+}
+.container{
+margin-left:5px;
+margin-top:2px;
+}
+.wrap{
+margin-top:5px;
+}
+.button6{
+  float:right;
+  font-size: 13px;
+  margin-right:10px;
+  margin-top:0px;
+  padding:3px;
+  padding-right:5px;
+  padding-left:5px;
+  border:1px solid #d0d0d0;
+  border-radius:5px;
+  background-color: rgb(93, 211, 152);
+}
+.wrapper{
+  margin-right:5px;
+  margin-top:5px;
+}

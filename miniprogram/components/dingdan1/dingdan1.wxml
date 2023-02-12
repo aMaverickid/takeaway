@@ -1,0 +1,19 @@
+<!--components/dingdan1/dingdan1.wxml-->
+<view class="list-item" bindtap="display" data-item="{{item.data}}"> 
+    <image class="picture" src="../../images/yongcan.jpg"></image>
+  <view class="container">  
+  <view style="margin-top:2px;float:left;font-size:15px;">{{item.name}}发布的订单</view>
+  <view class="wrapper">
+  <view class="button6" bindtap="add" data-item="{{item}}">加入</view>
+  <view class="button6" bindtap="get" data-item="{{item}}">帮带</view>
+  </view>
+    <view class="wrap">
+    <view style="padding-bottom:25px"></view>
+    <view class="type">当前已参与该拼单人数：{{item.member}}</view>
+    <view class="type">发布时间：{{item.date}}</view>
+    <view class="type">订单地点：{{item.location}}</view>
+    <view class="type">订单累计金额：{{item.money}}元</view>
+    <view class="type">帮带抽成：5%</view>
+   </view>
+  </view>
+</view>

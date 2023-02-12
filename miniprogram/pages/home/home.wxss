@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.left_button{
+  float: left;
+}
+.right_button{
+  float: right;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

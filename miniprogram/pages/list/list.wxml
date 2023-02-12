@@ -1,0 +1,31 @@
+<!--pages/41/41.wxml-->
+<view>
+<view class="yong">
+    <text>欢迎来到拼单大厅!</text>
+  </view>
+<view class="page_row" bingtap="suo">
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size="20" type="search"></icon>
+      <input class="sousuobox" placeholder="搜索订单" bindinput="inputCom"/>
+    </view>
+  </view>
+  <view class="sousuo" bindtap="query">搜索</view>
+</view>
+<view class="buttonset">
+  <view class="button" bindtap="comTime">按时间排序</view>
+  <view class="button" bindtap="bindShowMsg">
+    <text>{{grade_name}}</text>
+  </view>
+  <view class="select_box" wx:if="{{select}}">
+    <view wx:for="{{grades}}" wx:key="unique">
+     <view class="select_one" bindtap="mySelect" data-name="{{item}}">{{item}}</view>
+    </view>
+  </view>
+  <view class="button" bindtap="comMoney">按金额排序</view>
+ </view>
+ <view style="padding-bottom:8px"></view>
+  <view wx:for="{{pingdan}}" wx:for-item="item" wx:for-index="index" wx:for-key="index">
+   <dingdan1 item="{{item}}"/>
+  </view>
+</view>

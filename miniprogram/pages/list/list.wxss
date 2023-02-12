@@ -1,0 +1,108 @@
+/* pages/41/41.wxss */
+page{
+  background-color: rgb(220, 254, 255);
+}
+.search{
+  width:80%;
+}
+.select_box{
+  
+  position: absolute;
+  width:50px;
+  right:0;
+  z-index: 1;
+  text-align:center;
+  font-size:10px;
+  margin-right: 198px;
+}
+.select_one{
+  background-color: rgb(238, 238, 238);
+  width:100%;
+  height:12px;
+  position: relative;
+  border:1px solid #666666;
+  padding:2px;
+  border-radius: 5px;
+}
+.image2{
+  width:35px;
+  height:35px;
+  margin-top:20px;
+  margin-left:20px;
+}
+.yong{
+  font-size:30px;
+  color:#f00;
+  margin-left:20px;
+  margin-top:5px;
+
+}
+.a{
+  font-size:15px;
+  margin-top:5px;
+  margin-left:10px;
+  
+}
+.search_arr{
+  border:1px solid #d0d0d0;
+  border-radius:10rpx;
+  margin-left:20rpx;
+}
+.search_arr input{
+  margin-left:60rpx;
+  height:60rpx;
+  margin-left:5px;
+}
+.bc_text{
+  line-height:68rpx;
+  height:68rpx;
+  margin-top:34rpx;
+}
+.sousuo{
+  margin-left:15rpx;
+  width: 15%;
+  line-height: 150%;
+  text-align: center;
+  border:1px solid #d0d0d0;
+  border-radius: 10rpx;
+}
+.page_row{
+  display: flex;
+  flex-direction:row;
+  margin-top:15px;
+}
+.searchcion{
+  margin:10rpx 10rpx 10rpx 10rpx;
+  position:absolute;
+  left:520rpx;
+  z-index:2;
+  width:20px;
+  height: 20px;
+  text-align:center;
+}
+.cover-box{
+  position: fixed;
+  z-index:-1;
+  width: 100%;
+  height: 105px;
+  
+}
+.button{
+  margin-left:15rpx;
+  height:12px;
+  font-size:10px;
+  width:50px;
+  text-align:center;
+  color: black;
+  border-radius: 5px;
+  border:1px solid #666666;
+  background-color: rgb(238, 238, 238);
+  padding:2px;
+  padding-bottom: 2px;
+}
+.buttonset{
+  flex-direction:row;
+  margin-left:10rpx;
+  display:flex;
+  margin-top:5px;
+}

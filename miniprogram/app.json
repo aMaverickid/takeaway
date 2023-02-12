@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/user/user",
+    "pages/list/list",
+    "pages/location/location",
+    "pages/index/index",
+    "pages/pay/pay",
+    "pages/order/order",
+    "pages/display/display"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0ff",
+    "navigationBarTitleText": "随手帮",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_HL.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "拼单大厅",
+        "iconPath": "images/icon_API.png",
+        "selectedIconPath": "images/icon_API_HL.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_HL.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于寻找最近的进行中的订单！"
+    }
+  }
+}

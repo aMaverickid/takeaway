@@ -1,0 +1,32 @@
+/**app.wxss**/
+.container {
+  /*去掉暂时不知道作业的样式*/
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;*/
+  margin:0;
+  padding:0;
+  height: 100%;
+  box-sizing: border-box;
+} 
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

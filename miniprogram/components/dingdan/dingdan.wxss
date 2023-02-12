@@ -1,0 +1,31 @@
+/* components/dingdan.wxss */
+.picture{
+  
+    height:150rpx;
+    width:150rpx;
+    border-radius:15rpx;
+    float:left;
+   margin-left:15rpx;
+   margin-top:10rpx;
+   margin-right:5px;
+}
+.list-item{
+  border:1px solid #d0d0d0;
+  border-radius:5px;
+  width:95%;
+  margin-left:5px;
+  height:170rpx;
+  background-color: white;
+  margin-bottom:7px;
+}
+.type{
+  font-size:10px;
+  color:#b1b1b1;
+}
+.container{
+  margin-left:5px;
+  margin-top:2px;
+}
+.wrap{
+  margin-top:5px;
+}

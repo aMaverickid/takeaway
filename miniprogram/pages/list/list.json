@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "dingdan1":"../../components/dingdan1/dingdan1"
+  },
+  "enablePullDownRefresh": true
+  
+}

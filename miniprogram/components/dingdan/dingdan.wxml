@@ -1,0 +1,12 @@
+<!--components/dingdan.wxml-->
+<view class="list-item" bindtap="display" data-item="{{item.data}}"> 
+    <image class="picture" src="../../images/yongcan.jpg"></image>
+  <view class="container">  
+  <view style="margin-top:2px;">{{item.name}}的订单</view>
+    <view class="wrap">
+    <view class="type">发布时间：{{item.date}}</view>
+    <view class="type">订单地点：{{item.location}}</view>
+    <view class="type">订单金额：{{item.money}}元</view>
+   </view>
+  </view>
+</view>

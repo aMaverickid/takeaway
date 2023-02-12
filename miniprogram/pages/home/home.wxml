@@ -1,0 +1,14 @@
+<!--pages/home/home.wxml-->
+<view class="page-section-gap">
+  <map class="myMap" id="myMap" style="width: 100%;height: 660rpx;" scale="16" show-location show-compass longitude="120.082129" latitude="30.302611" markers="{{markers}}">
+  </map>
+  <view style="margin-top: 40rpx; margin-bottom: 40rpx;">
+   <view class="left_button">
+    <button style="width: 330rpx; height: 320rpx; background-color: rgb(255, 175, 78);" bindtap="select">帮带</button>
+   </view>
+   <view class="right_button" bindtap="handle_menu" >
+    <button style="width: 330rpx; height: 320rpx;background-color: rgb(255, 201, 134);">求帮带</button>
+   </view>
+  </view>
+</view>
+
